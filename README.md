@@ -1,5 +1,4 @@
 # myframe
 我的个人框架
 
-#1
-Maven\springMVC\Hibernate\
+第一步集成 Maven\springMVC\Hibernate\
