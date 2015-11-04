@@ -73,7 +73,7 @@
 <div class="content">
     <div class="div_01 divsame">
         <div class="div-content div01-content">
-
+            <p>${word}</p>
         </div>
     </div>
     <div class="div_02 divsame">

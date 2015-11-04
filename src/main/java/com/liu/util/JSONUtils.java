@@ -1,4 +1,4 @@
-package com.liu.utils;
+package com.liu.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;

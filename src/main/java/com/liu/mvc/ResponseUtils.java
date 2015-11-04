@@ -1,6 +1,6 @@
 package com.liu.mvc;
 
-import com.liu.utils.JSONUtils;
+import com.liu.util.JSONUtils;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;

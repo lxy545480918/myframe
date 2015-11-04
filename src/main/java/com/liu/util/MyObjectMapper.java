@@ -1,4 +1,4 @@
-package com.liu.utils;
+package com.liu.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonParser;
