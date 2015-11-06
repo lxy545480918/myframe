@@ -51,7 +51,7 @@ public class JSONUtils {
 		}
 	}
 
-	@SuppressWarnings("unchecked")
+
 	public static <T> T update(String value, T object) {
 		try {
 			return (T) mapper.readerForUpdating(object).readValue(value);
@@ -93,7 +93,7 @@ public class JSONUtils {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
+
 	public static String toString(Object o, Class<?> clz) {
 		try {
 			return mapper.writerWithType(clz).writeValueAsString(o);

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>hi</title>
-    <link rel="shortcut icon" href="/content/image/favicon.ico">
+    <link rel="shortcut icon" href="/content/images/favicon.ico">
     <link type="text/css" rel="stylesheet" href="/content/css/about.css">
     <script type="text/javascript"src="/content/script/lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript"src="/content/script/lib/jquery.mousewheel.min.js"></script>

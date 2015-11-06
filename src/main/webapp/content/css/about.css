@@ -13,7 +13,7 @@ ul{list-style:none;}
 .content .div-content{position: relative;margin: 0px auto;}
 
 .div_01,.div_02,.div_03,.div_04{width:100%;height:100%;margin:0 auto; text-align: center;}
-.div_01{position: relative;background: url(../image/div1-bg.jpg) center bottom no-repeat #FAB153;}
+.div_01{position: relative;background: url(../images/div1-bg.jpg) center bottom no-repeat #FAB153;}
 .div_02{position: relative;background: #46A1E8;}
 .div_03{position: relative;background: #FA8E8C;}
 .div_04{position: relative;background: #8860DD;}
