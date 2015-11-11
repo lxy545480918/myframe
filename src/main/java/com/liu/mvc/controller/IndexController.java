@@ -1,6 +1,5 @@
 package com.liu.mvc.controller;
 
-import com.liu.entity.Account;
 import com.liu.service.support.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,11 +22,6 @@ public class IndexController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index1(ModelMap map) {
-        System.out.println("啊实打实的");
-        Account account = indexService.get(Account.class, 0);
-        System.out.println("====>");
-        System.out.println(account);
-        map.put("word", "Welcome to myFrame");
         return modelView("/index");
     }
 

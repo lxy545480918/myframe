@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.liu.mvc.ResponseUtils.modelView;
+import static com.liu.mvc.ResponseUtils.jsonView;
+
 /**
  * Created by lxy on 2015/11/5.
  */
@@ -22,14 +25,14 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
                                          Exception ex) {
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("ex", ex);
-
+        //日志记录
         log.error("错误", ex);
 
         // 根据不同错误转向不同页面
         if (ex instanceof CodedBaseRuntimeException) {
-            return new ModelAndView("/error", model);
+            return jsonView(300, ex.getMessage());
         } else {
-            return new ModelAndView("/error", model);
+            return modelView("/error", model);
         }
     }
 }
