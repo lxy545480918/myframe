@@ -1,13 +1,14 @@
 package com.liu.core.dictionary.support;
 
-import nw.core.dictionary.CodeRule;
-import nw.core.dictionary.DictionaryItem;
-import nw.core.dictionary.SliceTypes;
-import nw.core.schema.DataTypes;
-import nw.util.ApplicationContextHolder;
-import nw.util.JSONUtils;
-import nw.util.exp.ExpressionProcessor;
-import nw.util.exp.exception.ExprException;
+import com.liu.core.dictionary.CodeRule;
+import com.liu.core.dictionary.Dictionary;
+import com.liu.core.dictionary.DictionaryItem;
+import com.liu.core.dictionary.SliceTypes;
+import com.liu.core.schema.DataTypes;
+import com.liu.util.ApplicationContextHolder;
+import com.liu.util.JSONUtils;
+import com.liu.util.exp.ExpressionProcessor;
+import com.liu.util.exp.exception.ExprException;
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.Query;
 import org.hibernate.Session;

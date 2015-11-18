@@ -19,5 +19,7 @@
 
 <input type="button" value="测试sql查询" onclick="window.location='/demo/db.html'">
 
+<input type="button" value="测试字典" onclick="window.location='/demo/dic.html'">
+
 </body>
 </html>

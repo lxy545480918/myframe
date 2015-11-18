@@ -13,6 +13,7 @@ import org.dom4j.Element;
 import org.springframework.core.io.Resource;
 import org.springframework.util.ResourceUtils;
 
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 
@@ -35,6 +36,7 @@ public abstract class AbstractConfigurableLoader<T extends Configurable> impleme
 			Document doc = XMLHelper.getDocument(r.getInputStream());
 			return createInstanceFormDoc(id, doc, r.lastModified());
 		} catch (Exception e) {
+			e.printStackTrace();
 			return null;
 		}
 	}

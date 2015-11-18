@@ -8,4 +8,5 @@
 
        <import resource="spring-mvc.xml" />
        <import resource="spring-datasource.xml" />
+       <import resource="spring-expr-base.xml" />
 </beans>

@@ -1,8 +1,8 @@
 package com.liu.core.dictionary.support;
 
-import nw.core.dictionary.DictionaryItem;
-import nw.util.ApplicationContextHolder;
-import nw.util.converter.ConversionUtils;
+import com.liu.core.dictionary.DictionaryItem;
+import com.liu.util.ApplicationContextHolder;
+import com.liu.util.converter.ConversionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.dom4j.Document;
 import org.dom4j.Element;

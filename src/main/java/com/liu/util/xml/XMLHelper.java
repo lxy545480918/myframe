@@ -27,7 +27,9 @@ public class XMLHelper {
 	public static Document getDocument(InputStream ins) throws DocumentException, IOException {
 		SAXReader oReader = new SAXReader();
 		try {
-			return oReader.read(ins);
+//			oReader.setEncoding("UTF-8");
+			Document doc = oReader.read(ins);
+			return doc;
 		} finally {
 			ins.close();
 		}

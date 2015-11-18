@@ -1,6 +1,6 @@
 package com.liu.util.converter.support;
 
-import nw.util.BeanUtils;
+import com.liu.util.BeanUtils;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.converter.GenericConverter;
 

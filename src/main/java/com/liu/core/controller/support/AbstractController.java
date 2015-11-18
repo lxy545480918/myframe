@@ -56,15 +56,6 @@ public abstract class AbstractController<T extends Configurable> implements Cont
 			lock.lock();
 			if (store.containsKey(id)) {
 				return store.get(id);
-			}
-		} finally {
-			lock.unlock();
-		}
-
-		try {
-			lock.lock();
-			if (store.containsKey(id)) {
-				return store.get(id);
 			} else {
 				T t = loader.load(id);
 				if (t != null) {

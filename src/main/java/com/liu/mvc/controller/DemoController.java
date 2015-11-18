@@ -1,5 +1,7 @@
 package com.liu.mvc.controller;
 
+import com.liu.core.dictionary.Dictionary;
+import com.liu.core.dictionary.DictionaryController;
 import com.liu.entity.Account;
 import com.liu.service.support.DemoService;
 import com.liu.util.exception.CodedBaseRuntimeException;
@@ -29,12 +31,19 @@ public class DemoController {
         return jsonView("显示异常界面");
     }
 
+    //测试数据库
     @RequestMapping(value = "/db.html", method = RequestMethod.GET)
     public ModelAndView db() {
         Account account = demoService.get(Account.class, 1L);
         return jsonView(account);
     }
 
+    //测试字典
+    @RequestMapping(value = "/dic.html", method = RequestMethod.GET)
+    public ModelAndView dic() {
+        Dictionary dic = DictionaryController.instance().get("dic.confirm");
+        return jsonView(dic.getItems());
+    }
 
 
 

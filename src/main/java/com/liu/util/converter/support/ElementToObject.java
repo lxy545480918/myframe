@@ -1,6 +1,6 @@
 package com.liu.util.converter.support;
 
-import nw.util.BeanUtils;
+import com.liu.util.BeanUtils;
 import org.dom4j.Attribute;
 import org.dom4j.Element;
 import org.springframework.core.convert.TypeDescriptor;

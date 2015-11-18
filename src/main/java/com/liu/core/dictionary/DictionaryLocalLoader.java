@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 public class DictionaryLocalLoader extends AbstractConfigurableLoader<Dictionary> {
-	private static final String DEFAULT_DIC_PACKAGE = "nw.core.dictionary.support.";
+	private static final String DEFAULT_DIC_PACKAGE = "com.liu.core.dictionary.support.";
 
 	public DictionaryLocalLoader() {
 		postfix = ".dic";
@@ -24,6 +24,7 @@ public class DictionaryLocalLoader extends AbstractConfigurableLoader<Dictionary
 	@SuppressWarnings("unchecked")
 	private static void setupProperties(Configurable o, Element el) {
 		List<Element> ls = el.selectNodes("properties/p");
+
 		for (Element p : ls) {
 			String nm = p.attributeValue("name");
 			List<Attribute> attrs = p.attributes();
