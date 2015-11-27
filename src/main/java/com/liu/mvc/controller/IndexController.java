@@ -22,7 +22,7 @@ public class IndexController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index1(ModelMap map) {
-        return modelView("/index");
+        return modelView("/demo");
     }
 
     @RequestMapping(value = "/index.html", method = RequestMethod.GET)

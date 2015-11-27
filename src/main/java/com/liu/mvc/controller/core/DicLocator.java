@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController
 public class DicLocator {
 
-	@RequestMapping(value = "/**/{id}.dc", method = RequestMethod.GET)
+	@RequestMapping(value = "/**/{id}.dic", method = RequestMethod.GET)
 	public List<DictionaryItem> get(@PathVariable String id, @RequestParam(required = false) String node,
 			@RequestParam(required = false, defaultValue = "3") Integer sliceType, @RequestParam(required = false) String query, @RequestParam(value = "filter",required = false) String filter) {
 		Dictionary dic = DictionaryController.instance().get(id);
