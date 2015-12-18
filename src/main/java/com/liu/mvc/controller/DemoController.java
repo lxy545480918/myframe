@@ -3,7 +3,7 @@ package com.liu.mvc.controller;
 import com.liu.core.dictionary.Dictionary;
 import com.liu.core.dictionary.DictionaryController;
 import com.liu.entity.Account;
-import com.liu.service.support.DemoService;
+import com.liu.service.DemoService;
 import com.liu.util.exception.CodedBaseRuntimeException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -29,7 +29,7 @@ public class DictionaryLocalLoader extends AbstractConfigurableLoader<Dictionary
 			String nm = p.attributeValue("name");
 			List<Attribute> attrs = p.attributes();
 			if (attrs.size() > 1) {
-				Map<String, Object> map = new HashMap<String, Object>();
+				Map<String, Object> map = new HashMap<>();
 				for (Attribute attr : attrs) {
 					map.put(attr.getName(), attr.getValue());
 				}

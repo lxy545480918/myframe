@@ -1,6 +1,6 @@
 package com.liu.mvc.controller;
 
-import com.liu.service.support.IndexService;
+import com.liu.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

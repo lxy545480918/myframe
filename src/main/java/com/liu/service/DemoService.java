@@ -1,6 +1,5 @@
-package com.liu.service.support;
+package com.liu.service;
 
-import com.liu.service.BaseService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,5 +8,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class DemoService extends BaseService {
 
-    
 }
