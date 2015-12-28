@@ -2,11 +2,8 @@ package com.liu.dao.exception;
 
 import com.liu.util.exception.CodedBaseRuntimeException;
 
-/**
- * 用于@Transactional的扑捉的事务回滚，继承RuntimeException
- * Created by echoops on 2015/7/10.
- */
-public class DaoException extends CodedBaseRuntimeException{
+
+public class DaoException extends CodedBaseRuntimeException {
 
     public DaoException(){
         super();

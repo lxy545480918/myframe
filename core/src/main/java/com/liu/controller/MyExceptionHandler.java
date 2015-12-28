@@ -14,9 +14,7 @@ import java.util.Map;
 import static com.liu.controller.ResponseUtils.jsonView;
 import static com.liu.controller.ResponseUtils.modelView;
 
-/**
- * Created by lxy on 2015/11/5.
- */
+
 public class MyExceptionHandler implements HandlerExceptionResolver {
 
     private static final Logger log = LoggerFactory.getLogger(MyExceptionHandler.class);

@@ -26,6 +26,7 @@ public class DemoController {
     @RequestMapping(value = "/exception.html", method = RequestMethod.GET)
     public ModelAndView exception() {
         if("1".equals("1")) {
+            System.out.println("中文");
             throw new CodedBaseRuntimeException("随便抛出一个异常");
         }
         return jsonView("显示异常界面");
