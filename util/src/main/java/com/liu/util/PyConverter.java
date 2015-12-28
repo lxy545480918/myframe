@@ -21,8 +21,4 @@ public class PyConverter {
 		return PinyinHelper.convertToPinyinString(s, "");
 	}
 
-	public static void main(String[] args) {
-		System.out.println(getPinYinWithoutTone("中华人民共和国"));
-
-	}
 }
