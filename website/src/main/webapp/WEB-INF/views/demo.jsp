@@ -21,5 +21,8 @@
 
 <input type="button" value="测试字典" onclick="window.location='/demo/dic.html'">
 
+<input type="button" value="测试Redis" onclick="window.location='/demo/redis.html'">
+
+
 </body>
 </html>

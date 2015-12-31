@@ -1,5 +1,6 @@
 package com.liu.controller;
 
+import com.liu.cache.RedisUtil;
 import com.liu.core.dictionary.Dictionary;
 import com.liu.core.dictionary.DictionaryController;
 import com.liu.entity.Account;
@@ -23,10 +24,12 @@ public class DemoController {
     @Autowired
     DemoService demoService;
 
+    @Autowired
+    RedisUtil redisUtil;
+
     @RequestMapping(value = "/exception.html", method = RequestMethod.GET)
     public ModelAndView exception() {
         if("1".equals("1")) {
-            System.out.println("中文");
             throw new CodedBaseRuntimeException("随便抛出一个异常");
         }
         return jsonView("显示异常界面");
@@ -46,6 +49,11 @@ public class DemoController {
         return jsonView(dic.getItems());
     }
 
+    //测试缓存
+    @RequestMapping(value = "/redis.html", method = RequestMethod.GET)
+    public ModelAndView redis() {
+        return jsonView(redisUtil.get("name3"));
+    }
 
 
 }
