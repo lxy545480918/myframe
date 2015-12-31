@@ -24,7 +24,7 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("ex", ex);
         //日志记录
-        log.error("错误", ex);
+        log.error(ex.getMessage(), ex);
 
         // 根据不同错误转向不同页面
         if (ex instanceof CodedBaseRuntimeException) {
