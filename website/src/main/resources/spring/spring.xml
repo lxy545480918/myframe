@@ -11,5 +11,7 @@
        <import resource="classpath*:/com/liu/util/context/spring-context.xml"/>
        <import resource="classpath*:/com/liu/util/exp/spring-expr-base.xml"/>
        <import resource="classpath*:/spring-redis.xml"/>
+       <import resource="classpath*:/spring-dubbo.xml"/>
+
 
 </beans>

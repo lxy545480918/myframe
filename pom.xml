@@ -11,6 +11,8 @@
         <module>cache</module>
         <module>core</module>
         <module>util</module>
+        <module>dubbo</module>
+        <module>dubbo-service</module>
         <module>website</module>
     </modules>
     <packaging>pom</packaging>
