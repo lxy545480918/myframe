@@ -10,8 +10,10 @@
        <import resource="spring-datasource.xml" />
        <import resource="classpath*:/com/liu/util/context/spring-context.xml"/>
        <import resource="classpath*:/com/liu/util/exp/spring-expr-base.xml"/>
+       <!-- 启用redis -->
        <import resource="classpath*:/spring-redis.xml"/>
-       <import resource="classpath*:/spring-dubbo.xml"/>
+       <!-- 启用dubbo -->
+       <!--<import resource="classpath*:/spring-dubbo.xml"/>-->
 
 
 </beans>

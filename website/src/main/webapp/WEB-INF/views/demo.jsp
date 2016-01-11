@@ -23,6 +23,9 @@
 
 <input type="button" value="测试Redis" onclick="window.location='/demo/redis.html'">
 
+<input type="button" value="测试类型转换" onclick="window.location='/demo/convert.html'">
+
+
 
 </body>
 </html>

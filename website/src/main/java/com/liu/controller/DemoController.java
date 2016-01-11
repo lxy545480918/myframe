@@ -4,19 +4,24 @@ import com.liu.cache.RedisUtil;
 import com.liu.core.dictionary.Dictionary;
 import com.liu.core.dictionary.DictionaryController;
 import com.liu.entity.Account;
+import com.liu.entity.DemoEntity;
 import com.liu.service.DemoService;
+import com.liu.util.JSONUtils;
 import com.liu.util.exception.CodedBaseRuntimeException;
+import com.liu.util.converter.ConversionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import static com.liu.controller.ResponseUtils.jsonView;
+import java.util.Date;
 
-/**
- * Created by lxy on 2015/11/3.
- */
+import static com.liu.controller.ResponseUtils.jsonView;
+import static com.liu.controller.ResponseUtils.modelView;
+
+
 @Controller
 @RequestMapping(value = "demo")
 public class DemoController {
@@ -53,6 +58,19 @@ public class DemoController {
     @RequestMapping(value = "/redis.html", method = RequestMethod.GET)
     public ModelAndView redis() {
         return jsonView(redisUtil.get("name3"));
+    }
+
+    //测试类型转换
+    @RequestMapping(value = "/convert.html", method = RequestMethod.GET)
+    public ModelAndView convert(ModelMap map) {
+        DemoEntity demo = new DemoEntity();
+        demo.setDate(new Date());
+        demo.setNumber(10.22);
+        demo.setStr("i like code");
+        map.put("demo", JSONUtils.toString(demo));
+        map.put("dateConvert", ConversionUtils.convert(new Date(), String.class));
+
+        return modelView("demoEntity");
     }
 
 
