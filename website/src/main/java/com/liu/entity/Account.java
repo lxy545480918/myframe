@@ -5,9 +5,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-/**
- * Created by lxy on 2015/11/4.
- */
 @Entity
 public class Account {
     private long id;
