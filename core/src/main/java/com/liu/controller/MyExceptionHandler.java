@@ -28,7 +28,7 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 
         // 根据不同错误转向不同页面
         if (ex instanceof CodedBaseRuntimeException) {
-            return jsonView(300, ex.getMessage());
+            return jsonView(((CodedBaseRuntimeException) ex).getCode(), ex.getMessage());
         } else {
             return modelView("/error", model);
         }
